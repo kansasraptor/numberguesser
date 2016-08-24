@@ -1,0 +1,23 @@
+html {
+  background: url(moon.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+}
+
+#input, #output {
+  width: 20%;
+}
+h1 {
+  font-size: 200%;
+  margin-top: 200px;
+  margin-bottom: 50px;
+}
+p {
+  margin-bottom: 50px;
+}
+.clearInput {
+  margin-top: 20px;
+}
