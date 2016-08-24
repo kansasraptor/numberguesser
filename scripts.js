@@ -17,7 +17,7 @@ var number = 10
 
 submit.addEventListener ('click', function (){
 
-  parsInt(guess)
+  parsInt(input.value)
 
   if (guess === randomNumber) "Shazam!";
 
