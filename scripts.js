@@ -1,8 +1,26 @@
-var guess = document.getElementById('#guessBox')
-var submit = document.querySelector('.pickNumber');
-var clearButton = document.querySelector('.clear');
-var input = document.querySelector('#guessBox')
-var number = 10
+var generatedNumber = Math.floor(Math.random()*100+1);
+
+function Main() {
+  var input = document.getElementById('input');
+  var output = document.getElementById('output');
+  var playerGuess = parseInt(input.value);
+
+  if (playerGuess > generatedNumber) {
+    output.value="Flying too high!";
+  } else if (playerGuess < generatedNumber) {
+      output.value = "Aiming too low...";
+    } else if (playerGuess == generatedNumber) {
+      output.value = "Shazam! Great work.";
+    }
+};
+
+
+
+// var guess = document.getElementById('#guessBox')
+// var submit = document.querySelector('.pickNumber');
+// var clearButton = document.querySelector('.clear');
+// var input = document.querySelector('#guessBox')
+// var number = 10
 
 // var randomNumber = Math.floor(Math.random() * 100) + 1;
 // When a user clicks on "Guess A Number"
@@ -14,6 +32,7 @@ var number = 10
   // If no: display "too low" somewher *where?!)
 
 // get value from input field javascript
+
 
 submit.addEventListener ('click', function (){
 
